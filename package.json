@@ -11,9 +11,15 @@
   },
   "dependencies": {
     "@fontsource/comfortaa": "^5.0.18",
+    "@fontsource/laila": "^5.0.18",
+    "@fontsource/open-sans": "^5.0.20",
+    "@fontsource/spectral": "^5.0.8",
     "halfmoon": "^2.0.1",
+    "i18next": "^23.7.16",
+    "i18next-browser-languagedetector": "^7.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-i18next": "^14.0.0",
     "reactstrap": "^9.2.1"
   },
   "devDependencies": {
