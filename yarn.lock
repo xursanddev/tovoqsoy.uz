@@ -66,6 +66,11 @@
   resolved "https://registry.npmjs.org/@fontsource/open-sans/-/open-sans-5.0.20.tgz"
   integrity sha512-Tgdqmp9QX8YZd5TO+rEv5n5cZkTaDf0I0eHUHMe3xKxUgGR/9uKS7VYL+kiVZfMNZ/8EyMLwzcNFWVsNG6nZAg==
 
+"@fontsource/roboto@^5.0.8":
+  version "5.0.8"
+  resolved "https://registry.npmjs.org/@fontsource/roboto/-/roboto-5.0.8.tgz"
+  integrity sha512-XxPltXs5R31D6UZeLIV1td3wTXU3jzd3f2DLsXI8tytMGBkIsGcc9sIyiupRtA8y73HAhuSCeweOoBqf6DbWCA==
+
 "@fontsource/spectral@^5.0.8":
   version "5.0.8"
   resolved "https://registry.npmjs.org/@fontsource/spectral/-/spectral-5.0.8.tgz"

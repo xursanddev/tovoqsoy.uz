@@ -15,6 +15,7 @@ const NavbarComponent = () => {
                 // color="white"
                 expand={"md"}
                 dark
+                className={"position-absolute top-0 start-0 end-0 z-top"}
             >
                 <NavbarBrand href="/">
                     Tovoqsoy

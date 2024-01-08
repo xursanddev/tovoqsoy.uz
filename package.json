@@ -13,6 +13,7 @@
     "@fontsource/comfortaa": "^5.0.18",
     "@fontsource/laila": "^5.0.18",
     "@fontsource/open-sans": "^5.0.20",
+    "@fontsource/roboto": "^5.0.8",
     "@fontsource/spectral": "^5.0.8",
     "halfmoon": "^2.0.1",
     "i18next": "^23.7.16",

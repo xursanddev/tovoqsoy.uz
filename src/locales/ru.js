@@ -10,6 +10,9 @@ export default {
             gallery: "Галерея",
             services: "Услуги",
             contact: "Контакт"
+        },
+        services: {
+            name: "Наши сервисы"
         }
     }
 }

@@ -10,6 +10,9 @@ export default {
             gallery: "Galeriya",
             services: "Xizmatlar",
             contact: "Aloqa"
+        },
+        services: {
+            name: "Xizmatlarimiz"
         }
     }
 }

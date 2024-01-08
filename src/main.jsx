@@ -11,6 +11,7 @@ import '@fontsource/laila/700.css';
 import '@fontsource/open-sans/400.css';
 import '@fontsource/open-sans/600.css';
 import '@fontsource/spectral/600.css';
+import "@fontsource/roboto/400.css";
 import "./styles/main.css";
 
 createRoot(document.getElementById("root")).render(

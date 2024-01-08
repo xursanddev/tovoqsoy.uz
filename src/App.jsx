@@ -2,6 +2,11 @@ import React, {Fragment, useEffect, useState} from 'react';
 import {useTranslation} from "react-i18next";
 // import {Container, Dropdown, DropdownItem, DropdownMenu, DropdownToggle} from "reactstrap";
 import NavbarComponent from "./components/NavbarComponent.jsx";
+import HeaderComponent from "./components/HeaderComponent.jsx";
+import GalleryComponent from "./components/GalleryComponent.jsx";
+import ServicesComponent from "./components/ServicesComponent.jsx";
+import ContactComponent from "./components/ContactComponent.jsx";
+import FooterComponent from "./components/FooterComponent.jsx";
 
 const App = () => {
     const {t, i18n} = useTranslation();
@@ -21,7 +26,11 @@ const App = () => {
 
     return (
         <Fragment>
-            <NavbarComponent/>
+            <HeaderComponent/>
+            <GalleryComponent/>
+            <ServicesComponent/>
+            <ContactComponent/>
+            <FooterComponent/>
         </Fragment>
     );
 
