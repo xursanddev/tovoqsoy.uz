@@ -9,7 +9,7 @@ const ServicesComponent = () => {
 
     return (
         <div>
-            <Container id={"services"} className={"text-center"}>
+            <Container id={"services"} className={"text-center px-sm-5 px-3"}>
                 <h1>{t("services.name")}</h1>
                 <Row className={"row-cols-lg-2 row-cols-1 justify-content-center row-gap-4"}>
                     <Col>

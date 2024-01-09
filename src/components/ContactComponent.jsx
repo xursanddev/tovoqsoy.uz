@@ -8,9 +8,9 @@ const ContactComponent = () => {
 
     return (
         <div className={"contact"}>
-            <Container id={"contact"} className={"text-center"}>
+            <Container id={"contact"} className={"text-center px-md-5 px-sm-4 px-3"}>
                 <h1>{t("contact.title")}</h1>
-                <Row className={"row-cols-md-2 row-cols-1 row-gap-2"}>
+                <Row className={"row-cols-md-2 row-cols-1 row-gap-5"}>
                     <Col>
                         <img className={"img-fluid"} src={MapImage} alt=""/>
                     </Col>
