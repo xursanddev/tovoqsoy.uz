@@ -1,7 +1,7 @@
 import React from 'react';
-import {Button, Col, Container, Form, Row} from "reactstrap";
+import {Col, Container, Form, Row} from "reactstrap";
 import {useTranslation} from "react-i18next";
-import MapImage from "../assets/map.png";
+import {YMaps, Map, Clusterer, Placemark} from "@pbe/react-yandex-maps";
 
 const ContactComponent = () => {
     const {t} = useTranslation();
@@ -11,8 +11,26 @@ const ContactComponent = () => {
             <Container id={"contact"} className={"text-center px-md-5 px-sm-4 px-3"}>
                 <h1>{t("contact.title")}</h1>
                 <Row className={"row-cols-md-2 row-cols-1 row-gap-5"}>
-                    <Col>
-                        <img className={"img-fluid"} src={MapImage} alt=""/>
+                    <Col className={"rounded overflow-hidden"}>
+                        <YMaps>
+                            <Map
+                                width={"100%"}
+                                height={"100%"}
+                                defaultState={{
+                                    center: [41.614578, 69.641973],
+                                    zoom: 9,
+                                }}
+                            >
+                                <Clusterer
+                                    options={{
+                                        preset: "islands#yellowStretchyIcon",
+                                        groupByCoordinates: false,
+                                    }}
+                                >
+                                    <Placemark geometry={[41.614578, 69.641973]}/>
+                                </Clusterer>
+                            </Map>
+                        </YMaps>;
                     </Col>
                     <Col>
                         <Form className={"form text-start"}>
@@ -36,8 +54,9 @@ const ContactComponent = () => {
                             </div>
                             <div className={"text-center submit"}>
                                 <button>{t("contact.submit")}</button>
-                                <p className={"mt-2 tel"}>
-                                    {t("contact.call")} <a className={"text-decoration-none text-black fs-5"} href="tel:+998998528327">+99(899) 852-83-27</a>
+                                <p className={"mt-3 tel"}>
+                                    {t("contact.call")} <a className={"text-decoration-none text-black fs-5"}
+                                                           href="tel:+998998528327">+99(899) 852-83-27</a>
                                 </p>
                             </div>
                         </Form>

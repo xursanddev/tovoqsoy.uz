@@ -15,6 +15,7 @@
     "@fontsource/open-sans": "^5.0.20",
     "@fontsource/roboto": "^5.0.8",
     "@fontsource/spectral": "^5.0.8",
+    "@pbe/react-yandex-maps": "^1.2.5",
     "halfmoon": "^2.0.1",
     "i18next": "^23.7.16",
     "i18next-browser-languagedetector": "^7.2.0",

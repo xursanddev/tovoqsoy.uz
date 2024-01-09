@@ -1,5 +1,5 @@
 import React from 'react';
-import {Col, Container, Row} from "reactstrap";
+import {Button, Col, Container, Row} from "reactstrap";
 import {useTranslation} from "react-i18next";
 import CarIcon from "../assets/car.png";
 import GroupIcon from "../assets/group.png";
@@ -11,9 +11,9 @@ const ServicesComponent = () => {
         <div>
             <Container id={"services"} className={"text-center px-sm-5 px-3"}>
                 <h1>{t("services.name")}</h1>
-                <Row className={"row-cols-lg-2 row-cols-1 justify-content-center row-gap-4"}>
+                <Row className={"row-cols-lg-2 row-cols-1 justify-content-evenly row-gap-4"}>
                     <Col>
-                        <div className={"service-card text-start ms-lg-auto mx-auto"}>
+                        <div className={"service-card text-start me-lg-5 mx-md-auto"}>
                             <div>
                                 <img src={CarIcon} alt=""/>
                             </div>
@@ -24,7 +24,7 @@ const ServicesComponent = () => {
                         </div>
                     </Col>
                     <Col>
-                        <div className={"service-card text-start ms-lg-auto mx-auto"}>
+                        <div className={"service-card text-start ms-lg-5 mx-md-auto"}>
                             <div>
                                 <img src={GroupIcon} alt=""/>
                             </div>
