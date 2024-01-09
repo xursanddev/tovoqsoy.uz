@@ -2,6 +2,10 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    overflow: hidden;
+}
+
 .navbar-brand {
     font-family: 'Laila', sans-serif;
     font-size: 2rem;
