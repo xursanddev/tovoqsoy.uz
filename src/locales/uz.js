@@ -23,8 +23,10 @@ export default {
                 title1: "Transport",
                 text1: "Transport xizmati orqali manzilingizga mashaqqatsiz yetib oling.",
                 title2: "Yo’l boshchi",
-                text2: "Bizning tajribali yo’lboshchimiz bilan Tovoqsoyda sayohat qiling."
-            }
+                text2: "Bizning tajribali yo’lboshchimiz bilan Tovoqsoyda sayohat qiling.",
+                more: "Ko‘rib chiqish"
+            },
+            close: "Yopish"
         },
         contact: {
             title: "Bog’lanish uchun",

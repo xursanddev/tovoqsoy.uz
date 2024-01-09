@@ -23,8 +23,10 @@ export default {
                 title1: "Transport",
                 text1: "Get to your destination effortlessly with our shuttle service.",
                 title2: "Road leader",
-                text2: "Travel in Tavoksoy with our experienced guide."
-            }
+                text2: "Travel in Tavoksoy with our experienced guide.",
+                more: "Review"
+            },
+            close: "Close"
         },
         contact: {
             title: "To connect",
