@@ -68,6 +68,10 @@ body {
     .header-content h1 {
         font-size: 45px;
     }
+
+    .fs-sm-2 {
+        font-size: 15px;
+    }
 }
 
 .header-content p {
@@ -77,6 +81,10 @@ body {
 }
 
 .z-top {
+    z-index: 99;
+}
+
+.z-top-full {
     z-index: 9999;
 }
 
@@ -173,3 +181,5 @@ body {
     margin: 8px;
     outline: none;
 }
+
+

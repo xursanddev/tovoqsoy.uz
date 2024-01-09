@@ -10,6 +10,8 @@ const GalleryComponent = () => {
     const settings = {
         dots: true,
         speed: 500,
+        lazy: true,
+        lazyLoad: true,
         slidesToShow: 3,
         responsive: [
             {
@@ -35,7 +37,7 @@ const GalleryComponent = () => {
     return (
         <div className={"gallery-content text-black"}>
             <Container fluid={"md"} tag={"section"} id={"gallery"} className={"px-0"}>
-                <h1 className={"text-center"}>{t("gallery.title")}</h1>
+                <h1 className={"text-center px-sm-0 px-3 fs-sm-2"}>{t("gallery.title")}</h1>
                 <Slider {...settings}>
                     {
                         Images.map((value, index) => {

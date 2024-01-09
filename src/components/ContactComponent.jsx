@@ -16,6 +16,7 @@ const ContactComponent = () => {
                             <Map
                                 width={"100%"}
                                 height={"100%"}
+                                style={{minHeight: "350px"}}
                                 defaultState={{
                                     center: [41.614578, 69.641973],
                                     zoom: 9,
