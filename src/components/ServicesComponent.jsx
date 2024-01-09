@@ -8,7 +8,7 @@ import {n1, n2, n3} from "../assets/NivaGallery";
 
 const ServicesComponent = () => {
     const {t} = useTranslation();
-    const [open, setOpen] = useState(true);
+    const [open, setOpen] = useState(false);
 
     const toggle = () => setOpen(prevState => !prevState);
 
