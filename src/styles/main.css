@@ -90,6 +90,13 @@ html {
     background: #FFF;
     box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.15);
     padding: 21px;
+
+}
+
+@media screen and (max-width: 800px){
+    #services .service-card {
+        width: 100% !important;
+    }
 }
 
 #services .service-card h1 {

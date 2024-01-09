@@ -34,7 +34,7 @@ const GalleryComponent = () => {
 
     return (
         <div className={"gallery-content text-black"}>
-            <Container fluid={"md"} tag={"section"} id={"gallery"}>
+            <Container fluid={"md"} tag={"section"} id={"gallery"} className={"px-0"}>
                 <h1 className={"text-center"}>{t("gallery.title")}</h1>
                 <Slider {...settings}>
                     {
