@@ -10,12 +10,31 @@ const GalleryComponent = () => {
     const settings = {
         dots: true,
         speed: 500,
-        slidesToShow: 3
+        slidesToShow: 3,
+        responsive: [
+            {
+                breakpoint: 900,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    initialSlide: 1
+                }
+            }
+        ]
     };
 
     return (
         <div className={"gallery-content text-black"}>
-            <Container tag={"section"} id={"gallery"}>
+            <Container fluid={"md"} tag={"section"} id={"gallery"}>
                 <h1 className={"text-center"}>{t("gallery.title")}</h1>
                 <Slider {...settings}>
                     {
