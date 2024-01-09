@@ -96,7 +96,6 @@ html {
 @media screen and (max-width: 800px){
     #services .service-card {
         width: 100% !important;
-        border: 1px solid red;
     }
 }
 
