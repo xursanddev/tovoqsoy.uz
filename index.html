@@ -1,9 +1,9 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="icon" type="image/svg+xml" href="/vite.svg"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Tovoksoy is one of the most beautiful places in Uzbekistan</title>
     <meta name="author" content="Xursand Amir-Temirov">
     <meta name="description" content="You can get free information about Tovoqsoy tourist spots through this site.">
@@ -27,15 +27,85 @@
     <meta property="og:type" content="website">
     <meta property="og:image" content="http://s2.fotokto.ru/photo/full/769/7699698.jpg">
 
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍀</text></svg>">
+    <link rel="icon"
+          href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍀</text></svg>">
     <style>
-      * {
-        font-family: 'Comfortaa', sans-serif;
-      }
+        * {
+            font-family: 'Comfortaa', sans-serif;
+        }
+
+        .loader {
+            position: relative;
+            width: 120px;
+            height: 140px;
+            background-image: radial-gradient(circle 30px, #fff 100%, transparent 0),
+            radial-gradient(circle 5px, #fff 100%, transparent 0),
+            radial-gradient(circle 5px, #fff 100%, transparent 0),
+            linear-gradient(#FFF 20px, transparent 0);
+            background-position: center 127px, 94px 102px, 16px 18px, center 114px;
+            background-size: 60px 60px, 10px 10px, 10px 10px, 4px 14px;
+            background-repeat: no-repeat;
+            z-index: 99999999;
+            perspective: 500px;
+        }
+
+        .loader::before {
+            content: '';
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 3px solid #fff;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -55%) rotate(-45deg);
+            border-right-color: transparent;
+            box-sizing: border-box;
+        }
+
+        .loader::after {
+            content: '';
+            position: absolute;
+            height: 80px;
+            width: 80px;
+            transform: translate(-50%, -55%) rotate(-45deg) rotateY(0deg);
+            left: 50%;
+            top: 50%;
+            box-sizing: border-box;
+            border: 7px solid #FF3D00;
+            border-radius: 50%;
+            animation: rotate 0.5s linear infinite;
+        }
+
+        @keyframes rotate {
+            to {
+                transform: translate(-50%, -55%) rotate(-45deg) rotateY(360deg)
+            }
+        }
+
+        .loader-content {
+            position: fixed;
+            display: grid;
+            place-items: center;
+            background: #263038;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+
     </style>
-  </head>
-  <body>
+</head>
+<body>
     <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<div class="loader-content">
+    <span class="loader"></span>
+</div>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+      document.querySelector(".loader-content").style.display = "none";
+  })
+</script>
+<script type="module" src="/src/main.jsx"></script>
+</body>
 </html>

@@ -9,7 +9,7 @@ const HeaderComponent = () => {
     return (
         <div className={"header d-flex justify-content-center align-items-center text-center"}>
             <NavbarComponent/>
-            <Container className={"min-vh-100 d-flex justify-content-center align-items-center z-3"}>
+            <Container className={"hero min-100 d-flex justify-content-center align-items-center z-3"}>
                 <div className={"header-content"}>
                     <h1>Tovoqsoy</h1>
                     <p>{t("banner.subtitle")}</p>

@@ -33,6 +33,9 @@ export default {
             desc: "Additional Information",
             submit: "Submit",
             call: "or: "
+        },
+        footer: {
+            copyright: "No rights reserved, Tovoqsoy "
         }
     }
 }

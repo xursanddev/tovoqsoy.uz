@@ -13,6 +13,8 @@ import '@fontsource/open-sans/600.css';
 import '@fontsource/spectral/600.css';
 import "@fontsource/roboto/400.css";
 import "./styles/main.css";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 createRoot(document.getElementById("root")).render(
     <App/>

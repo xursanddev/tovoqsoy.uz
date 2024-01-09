@@ -20,7 +20,7 @@ const NavbarComponent = () => {
                 <NavbarBrand href="/">
                     Tovoqsoy
                 </NavbarBrand>
-                <NavbarToggler onClick={toggle}/>
+                <NavbarToggler className={"text-white"} onClick={toggle}/>
                 <Collapse isOpen={isOpen} navbar>
                     <Nav className="ms-auto" navbar>
                         <NavItem>
