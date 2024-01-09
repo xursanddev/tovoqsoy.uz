@@ -55,8 +55,8 @@ const ContactComponent = () => {
                             <div className={"text-center submit"}>
                                 <button>{t("contact.submit")}</button>
                                 <p className={"mt-3 tel"}>
-                                    {t("contact.call")} <a className={"text-decoration-none text-black fs-5"}
-                                                           href="tel:+998998528327">+99(899) 852-83-27</a>
+                                    {t("contact.call")}
+                                    <a className={"text-decoration-none text-black fs-5"} href="tel:+998998528327">+99(899) 852-83-27</a>
                                 </p>
                             </div>
                         </Form>

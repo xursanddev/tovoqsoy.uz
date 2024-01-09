@@ -3,7 +3,14 @@ html {
 }
 
 body {
-    overflow-x: hidden;
+    /*overflow-x: hidden;*/
+}
+
+.slick-arrow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
 }
 
 .navbar-brand {
@@ -55,6 +62,12 @@ body {
     color: #ffffff;
     font-family: "Spectral", "Open Sans", sans-serif;
     font-size: 78px;
+}
+
+@media screen and (max-width: 400px) {
+    .header-content h1 {
+        font-size: 45px;
+    }
 }
 
 .header-content p {
