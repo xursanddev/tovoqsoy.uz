@@ -11,14 +11,27 @@ const FooterComponent = () => {
         setLang(i18n?.language === "ru" ? "Russian" : i18n?.language === "uz" ? "Uzbek" : "English");
     }, [i18n.language]);
 
-    const toggle = () => setDropdownOpen((prevState) => !prevState);
+    const toggle = () => {
+        const b = document.body;
+        if (!dropdownOpen) {
+            b.style.setProperty('--st', -(document.documentElement.scrollTop) + "px");
+            b.classList.add('noscroll');
+        } else {
+            b.classList.remove("noscroll");
+        }
+        setDropdownOpen((prevState) => !prevState);
+    };
+
+    // document.addEventListener("scroll", function () {
+    //     document.body.classList.remove("noscroll")
+    // });
 
     return (
         <Fragment>
             <div>
                 <Container tag={"footer"} className={"footer d-flex justify-content-between align-items-center"}>
                     <h1 className={"mb-0"}>Tovoqsoy</h1>
-                    <Dropdown isOpen={dropdownOpen} toggle={toggle}>
+                    <Dropdown isOpen={dropdownOpen} toggle={toggle} direction={"start"}>
                         <DropdownToggle>{lang}</DropdownToggle>
                         <DropdownMenu>
                             <DropdownItem onClick={() => i18n.changeLanguage("en")}>English</DropdownItem>

@@ -1,9 +1,9 @@
-import React, {Fragment, useState} from 'react';
+import {Fragment, useState} from 'react';
 import {Collapse, Nav, Navbar, NavbarBrand, NavbarToggler, NavItem, NavLink} from "reactstrap";
 import {useTranslation} from "react-i18next";
 
 const NavbarComponent = () => {
-    const [t, i18n] = useTranslation();
+    const [t] = useTranslation();
     const [isOpen, setIsOpen] = useState(false);
 
     const toggle = () => setIsOpen(!isOpen);
@@ -12,7 +12,6 @@ const NavbarComponent = () => {
         <Fragment>
             <Navbar
                 container={"lg"}
-                // color="white"
                 expand={"md"}
                 dark
                 className={"position-absolute top-0 start-0 end-0 z-top"}
@@ -20,7 +19,7 @@ const NavbarComponent = () => {
                 <NavbarBrand href="/">
                     Tovoqsoy
                 </NavbarBrand>
-                <NavbarToggler className={"text-white"} onClick={toggle}/>
+                <NavbarToggler className={`text-white ${isOpen ? "active" : ""}`} onClick={toggle}/>
                 <Collapse isOpen={isOpen} navbar>
                     <Nav className="ms-auto" navbar>
                         <NavItem>

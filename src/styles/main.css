@@ -118,7 +118,7 @@ body {
 
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 800px) {
     #services .service-card {
         width: 100% !important;
     }
@@ -182,4 +182,35 @@ body {
     outline: none;
 }
 
+.navbar-toggler {
+    width: 32px;
+    height: 32px;
+    position: relative;
+}
 
+.navbar-toggler::before,
+.navbar-toggler::after {
+    content: "";
+    position: absolute;
+    z-index: 99999;
+    height: 2px;
+    background-color: #dedddd;
+    left: 0;
+    right: 0;
+    border-radius: 12px;
+}
+
+.navbar-toggler::before {
+    top: 8px;
+}
+
+.navbar-toggler::after {
+    bottom: 8px;
+}
+
+.noscroll {
+    position: fixed;
+    top: var(--st, 0);
+    inline-size: 100%;
+    overflow-y:scroll;
+}
