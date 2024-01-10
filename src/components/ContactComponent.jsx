@@ -68,7 +68,7 @@ const ContactComponent = () => {
                                     {t("contact.call")}
                                     <a className={"text-decoration-none text-black fs-5"} href="tel:+998998528327">+99(899) 852-83-27</a>
                                 </p>
-                                <button type="reset" id={"reset"}></button>
+                                <button className={"d-none"} type="reset" id={"reset"}></button>
                             </div>
                         </Form>
                     </Col>
