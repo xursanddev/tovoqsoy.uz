@@ -14,6 +14,11 @@
   dependencies:
     regenerator-runtime "^0.14.0"
 
+"@dreamcoder-uzbek/telegramjs@^1.2.5":
+  version "1.2.5"
+  resolved "https://registry.npmjs.org/@dreamcoder-uzbek/telegramjs/-/telegramjs-1.2.5.tgz"
+  integrity sha512-2uwIzGbg5XVTjt5Ng8YL2k6OMsyC53arc+n2p6Y9Mj9orxKldcuHwxvubtw2imDeoiAd6tUxp3avK9j7XEADCQ==
+
 "@esbuild/win32-x64@0.19.11":
   version "0.19.11"
   resolved "https://registry.npmjs.org/@esbuild/win32-x64/-/win32-x64-0.19.11.tgz"

@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@dreamcoder-uzbek/telegramjs": "^1.2.5",
     "@fontsource/comfortaa": "^5.0.18",
     "@fontsource/laila": "^5.0.18",
     "@fontsource/open-sans": "^5.0.20",
