@@ -1,9 +1,9 @@
-import React, {Fragment, useState} from 'react';
+import {Fragment, useState} from 'react';
 import {Collapse, Nav, Navbar, NavbarBrand, NavbarToggler, NavItem, NavLink} from "reactstrap";
 import {useTranslation} from "react-i18next";
 
 const NavbarComponent = () => {
-    const [t, i18n] = useTranslation();
+    const [t] = useTranslation();
     const [isOpen, setIsOpen] = useState(false);
 
     const toggle = () => setIsOpen(!isOpen);
