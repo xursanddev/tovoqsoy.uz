@@ -12,6 +12,7 @@ const ContactComponent = () => {
         let t = e.target;
         const [name, phone, desc] = [t[0], t[1], t[2]];
         sendMessage(name.value, phone.value, desc.value);
+        document.getElementById("reset").click();
     };
 
     return (
@@ -67,6 +68,7 @@ const ContactComponent = () => {
                                     {t("contact.call")}
                                     <a className={"text-decoration-none text-black fs-5"} href="tel:+998998528327">+99(899) 852-83-27</a>
                                 </p>
+                                <button type="reset" id={"reset"}></button>
                             </div>
                         </Form>
                     </Col>
